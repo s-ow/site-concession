@@ -48,9 +48,10 @@ nav a:hover {
 
 .defilant {
     background-color: black;
-    height: 90vh;
+    height: 45vw;
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
 
 .defilant img {
@@ -61,7 +62,7 @@ nav a:hover {
 .defilant span {
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 4vw;
     position: absolute;
     color: white;
     left: 5%;
@@ -70,10 +71,11 @@ nav a:hover {
 
 .defilant a {
     color: white;
+    white-space: nowrap;
     text-decoration: none;
     background-color: #3e3f40;
     padding: 15px 50px;
-    font-size: 20px;
+    font-size: 2vw;
     transition: 0.5s;
 }
 .defilant a:hover {
