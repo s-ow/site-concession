@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Annis.fr | Annis France</title>
+
+    <link rel="shortcut icon" href="assets/pics/annis-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="">
+                <img src="assets/pics/annis-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="liens">
+            <ul>
+                <li><a href="">Modèles</a></li>
+                <li><a href="">Univers Annis</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="defilant">
+            <div class="premier">
+                <img src="assets/pics/s80rr.png" alt="">
+                <span>
+                    Annis vous souhaite de joyeuses fêtes ! <br>
+                    <a href="">
+                        Découvrir l'Annis S80RR
+                    </a>
+                </span>
+                <button class="arrow-button left" onclick="changeDiv('troisième')">←</button>
+                <button class="arrow-button right" onclick="changeDiv('deuxième')">→</button>
+            </div>
+            <div class="deuxième" style="display: none;">
+                <img src="assets/pics/concession.png" alt="">
+                <span>
+                    Annis vous souhaite de joyeuses fêtes ! <br>
+                    <a href="">
+                        Trouver nos concessions
+                    </a>
+                </span>
+                <button class="arrow-button left" onclick="changeDiv('premier')">←</button>
+                <button class="arrow-button right" onclick="changeDiv('troisième')">→</button>
+            </div>
+            <div class="troisième" style="display: none;">
+                <img src="assets/pics/meet.png" alt="">
+                <span>
+                    Annis vous souhaite de joyeuses fêtes ! <br>
+                    <a href="">
+                        Découvrir nos rassemblements
+                    </a>
+                </span>
+                <button class="arrow-button left" onclick="changeDiv('deuxième')">←</button>
+                <button class="arrow-button right" onclick="changeDiv('premier')">→</button>
+            </div>
+        </div>        
+    </div>
+
+    <script>
+        function changeDiv(targetDiv) {
+            const premierDiv = document.querySelector('.premier');
+            const deuxiemeDiv = document.querySelector('.deuxième');
+            const troisiemeDiv = document.querySelector('.troisième');
+    
+            switch (targetDiv) {
+                case 'deuxième':
+                    premierDiv.style.display = 'none';
+                    deuxiemeDiv.style.display = 'block';
+                    troisiemeDiv.style.display = 'none';
+                    break;
+                case 'troisième':
+                    premierDiv.style.display = 'none';
+                    deuxiemeDiv.style.display = 'none';
+                    troisiemeDiv.style.display = 'block';
+                    break;
+                default:
+                    premierDiv.style.display = 'block';
+                    deuxiemeDiv.style.display = 'none';
+                    troisiemeDiv.style.display = 'none';
+                    break;
+            }
+        }
+
+        function autoChangeDiv() {
+            setInterval(function () {
+                const premierDiv = document.querySelector('.premier');
+                const deuxiemeDiv = document.querySelector('.deuxième');
+                const troisiemeDiv = document.querySelector('.troisième');
+
+                if (premierDiv.style.display === 'block') {
+                    changeDiv('deuxième');
+                } else if (deuxiemeDiv.style.display === 'block') {
+                    changeDiv('troisième');
+                } else {
+                    changeDiv('premier');
+                }
+            }, 10000);
+        }
+
+        autoChangeDiv();
+    </script>
+    
+    
+</body>
+</html>
