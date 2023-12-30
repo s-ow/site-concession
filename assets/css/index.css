@@ -189,11 +189,13 @@ ul.modeles li:hover {
     font-weight: bold;
     text-decoration: underline;
     transition: ease-in-out 0.5s;
+    cursor: pointer;
 }
 ul.modeles li:hover img {
     height: 175px;
     width: auto;
     transition: ease-in-out 0.5s;
+    cursor: pointer;
 }
 .modelemenu {
     overflow-x: auto;
@@ -222,4 +224,43 @@ ul.modeles li:hover img {
 
 .modelemenu::-webkit-scrollbar-thumb {
     background-color: #888;
+}
+
+/* *********************************************************************************************************** TECH */
+
+.tech {
+    height: 100vw;
+}
+
+.tech img {
+    height: 100vw;
+}
+
+.tech .txt {
+    position: absolute;
+    left: 10%;
+    margin-top: 10%;
+    width: 40vw;
+    background-color: #f6fdffa2;
+    padding: 2%;
+    padding-bottom: 5%;
+}
+
+.tech p {
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.tech .btn {
+    border: 1px solid black;
+    padding: 20px 50px;
+    transition: 0.5s;
+}
+
+.tech .btn:hover {
+    border: white 1px solid;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
 }
