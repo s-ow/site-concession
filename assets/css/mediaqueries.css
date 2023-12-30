@@ -33,6 +33,7 @@
         padding: 0;
         padding-bottom: 0;
     }
+
     .tech {
         height: 100%;
     }
@@ -46,7 +47,7 @@
         border: 1px solid black;
         text-align: center;
     }
-    
+
     .tech .btn:hover {
         border: #565e75 1px solid;
         color: #565e75;
@@ -75,5 +76,14 @@
 
     nav {
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .colonne1 {
+        margin-left: 25%;
+    }
+    .colonne2 {
+        margin-right: 25%;
     }
 }
