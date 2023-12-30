@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="assets/pics/annis-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/mediaqueries.css">
+    <link rel="stylesheet" href="assets/css/caract.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -27,7 +30,7 @@
     </nav>
 
     <div class="container">
-<!--MENU DEFILANT-->
+        <!--MENU DEFILANT-->
         <div class="defilant">
             <div class="premier">
                 <img src="assets/pics/s80rr.png" alt="">
@@ -63,7 +66,7 @@
                 <button class="arrow-button right" onclick="changeDiv('premier')">→</button>
             </div>
         </div>
-<!--MENU DES MODELES-->
+        <!--MENU DES MODELES-->
         <div class="modelemenu">
             <ul class="boutons">
                 <li class="titre">Modèles</li>
@@ -82,28 +85,40 @@
             </ul>
 
             <ul class="modeles">
-                <li class="Course">
+                <li class="Course" onclick="infos('RE7B')">
                     <img src="assets/pics/re7b.png" alt=""> <br>
                     <span>RE-7B</span>
                 </li>
-                <li class="Berlines">
+                <li class="Berlines" onclick="infos('Pinnacle')">
                     <img src="assets/pics/pinnacle.png" alt=""> <br>
                     <span>Pinnacle</span>
                 </li>
-                <li class="Sportives">
+                <li class="Sportives" onclick="infos('ElegyRH8')">
                     <img src="assets/pics/elegyrh8.png" alt=""> <br>
                     <span>Elegy RH8</span>
                 </li>
             </ul>
         </div>
     </div>
-<!--qualité de la marque-->
+
+    <div class="caract">
+        <i class="fa-solid fa-circle-xmark" id="icon"></i>
+        <div class="nommodele"></div>
+        <div class="colonnes">
+            <div class="colonne1">
+            </div>
+            <div class="colonne2">
+            </div>
+        </div>
+    </div>
+    <!--qualité de la marque-->
     <div class="tech">
         <img src="assets/pics/s80rr-top.png" alt="">
         <span class="txt">
             <p>Une Technologie Avant-Gardiste</p>
             Explorez l'avenir de la conduite avec Annis, où la technologie de pointe redéfinit chaque trajet. <br>
-            Des systèmes autonomes aux interfaces intuitives, vivez une expérience de conduite à la pointe de l'innovation avec la toute nouvelle S80RR ! <br><br><br>
+            Des systèmes autonomes aux interfaces intuitives, vivez une expérience de conduite à la pointe de
+            l'innovation avec la toute nouvelle S80RR ! <br><br><br>
             <span class="btn">Découvrir l'Annis S80RR</span>
         </span>
     </div>
@@ -111,6 +126,8 @@
 
     <script src="assets/src/defilant.js"></script>
     <script src="assets/src/tri.js"></script>
+    <script src="assets/src/infos.js"></script>
+    
 </body>
 
 </html>

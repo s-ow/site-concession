@@ -1,0 +1,41 @@
+.caract {
+    display: none;
+    border: 1px solid grey;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.colonnes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colonne1,
+.colonne2 {
+    flex: 1;
+    text-align: center;
+}
+
+.colonne1 {
+    margin-left: 25%;
+}
+.colonne2 {
+    margin-right: 25%;
+}
+
+.nommodele {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.caract i {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+.caract i:hover {
+    color: lightgrey;
+    cursor: pointer;
+}
