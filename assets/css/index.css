@@ -1,8 +1,7 @@
 body {
-    font: 100%;
     padding: 0;
     margin: 0;
-    background-color: black;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 /*==================================================================================================================     BARRE DE NAVIGATION */
@@ -37,6 +36,7 @@ nav a {
     color: grey;
     transition: 0.5s;
 }
+
 nav a:hover {
     transition: 0.5s;
     color: black;
@@ -78,6 +78,7 @@ nav a:hover {
     font-size: 2vw;
     transition: 0.5s;
 }
+
 .defilant a:hover {
     background-color: #65615e;
     transition: 0.5s;
@@ -101,4 +102,124 @@ nav a:hover {
 
 .defilant .arrow-button.right {
     right: 10px;
+}
+
+/*==================================================================================================================     MODELES */
+
+
+
+
+
+ul.boutons li {
+    display: inline;
+}
+
+ul.boutons {
+    padding: 0;
+    margin: 40px 60px;
+    font-size: x-large;
+}
+
+li.titre {
+    text-decoration: underline;
+    color: black;
+}
+
+li.bouton {
+    color: lightgrey;
+    margin-left: 30px;
+    transition: 0.5s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+li.bouton:hover {
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+
+input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+input[type=checkbox] {
+    border-radius: 4px;
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+input[type="checkbox"]:checked {
+    background: lightgrey;
+}
+
+/* ======================================================   style de la liste des modèles horizontale */
+
+ul.modeles {
+    height: 200px;
+    list-style: none;
+    display: flex;
+}
+
+ul.modeles li {
+    display: inline;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: ease-in-out 0.5s;
+}
+
+ul.modeles li img {
+    height: 150px;
+    width: auto;
+    transition: ease-in-out 0.5s;
+}
+
+ul.modeles li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    transition: ease-in-out 0.5s;
+}
+ul.modeles li:hover img {
+    height: 175px;
+    width: auto;
+    transition: ease-in-out 0.5s;
+}
+.modelemenu {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.boutons,
+.modeles {
+    display: inline-block;
+}
+
+/* *********************************************************************************************************** barre de défilement horizontale */
+
+.modelemenu {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #dddddd00;
+}
+
+.modelemenu::-webkit-scrollbar {
+    width: 10px;
+}
+
+.modelemenu::-webkit-scrollbar-track {
+    background-color: #dddddd00;
+}
+
+.modelemenu::-webkit-scrollbar-thumb {
+    background-color: #888;
 }

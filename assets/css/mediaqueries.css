@@ -16,45 +16,25 @@
     }
     
     .defilant span {
-        text-align: left;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 40px;
-        position: absolute;
-        color: white;
-        left: 5%;
-        bottom: 5%;
     }
     
     .defilant a {
-        color: white;
-        text-decoration: none;
-        background-color: #3e3f40;
-        padding: 15px 50px;
         font-size: 20px;
-        transition: 0.5s;
     }
-    .defilant a:hover {
-        background-color: #65615e;
-        transition: 0.5s;
+  }
+
+
+
+  @media screen and (max-width: 900px) {
+    nav ul {
+        display: none;
     }
-    
-    .defilant .arrow-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #3e3f40;
-        color: white;
-        border: none;
-        padding: 10px;
-        font-size: 20px;
-        cursor: pointer;
+    .logo {
+        margin: 0;
+        padding: 0;
     }
-    
-    .defilant .arrow-button.left {
-        left: 10px;
-    }
-    
-    .defilant .arrow-button.right {
-        right: 10px;
+    nav {
+        justify-content: center;
     }
   }

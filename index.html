@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/mediaqueries.css">
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -25,6 +27,7 @@
     </nav>
 
     <div class="container">
+        <!--MENU DEFILANT-->
         <div class="defilant">
             <div class="premier">
                 <img src="assets/pics/s80rr.png" alt="">
@@ -59,53 +62,45 @@
                 <button class="arrow-button left" onclick="changeDiv('deuxième')">←</button>
                 <button class="arrow-button right" onclick="changeDiv('premier')">→</button>
             </div>
-        </div>        
+        </div>
+        <!--MENU DES MODELES-->
+        <div class="modelemenu">
+            <ul class="boutons">
+                <li class="titre">Modèles</li>
+                <li class="bouton">
+                    <label for="berlines">Berlines</label>
+                    <input type="checkbox" id="berlines" checked>
+                </li>
+                <li class="bouton">
+                    <label for="sportives">Sportives</label>
+                    <input type="checkbox" id="sportives" checked>
+                </li>
+                <li class="bouton">
+                    <label for="course">Course</label>
+                    <input type="checkbox" id="course" checked>
+                </li>
+            </ul>
+
+            <ul class="modeles">
+                <li class="Course">
+                    <img src="assets/pics/re7b.png" alt=""> <br>
+                    <span>RE-7B</span>
+                </li>
+                <li class="Berlines">
+                    <img src="assets/pics/pinnacle.png" alt=""> <br>
+                    <span>Pinnacle</span>
+                </li>
+                <li class="Sportives">
+                    <img src="assets/pics/elegyrh8.png" alt=""> <br>
+                    <span>Elegy RH8</span>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <script>
-        function changeDiv(targetDiv) {
-            const premierDiv = document.querySelector('.premier');
-            const deuxiemeDiv = document.querySelector('.deuxième');
-            const troisiemeDiv = document.querySelector('.troisième');
-    
-            switch (targetDiv) {
-                case 'deuxième':
-                    premierDiv.style.display = 'none';
-                    deuxiemeDiv.style.display = 'block';
-                    troisiemeDiv.style.display = 'none';
-                    break;
-                case 'troisième':
-                    premierDiv.style.display = 'none';
-                    deuxiemeDiv.style.display = 'none';
-                    troisiemeDiv.style.display = 'block';
-                    break;
-                default:
-                    premierDiv.style.display = 'block';
-                    deuxiemeDiv.style.display = 'none';
-                    troisiemeDiv.style.display = 'none';
-                    break;
-            }
-        }
 
-        function autoChangeDiv() {
-            setInterval(function () {
-                const premierDiv = document.querySelector('.premier');
-                const deuxiemeDiv = document.querySelector('.deuxième');
-                const troisiemeDiv = document.querySelector('.troisième');
-
-                if (premierDiv.style.display === 'block') {
-                    changeDiv('deuxième');
-                } else if (deuxiemeDiv.style.display === 'block') {
-                    changeDiv('troisième');
-                } else {
-                    changeDiv('premier');
-                }
-            }, 10000);
-        }
-
-        autoChangeDiv();
-    </script>
-    
-    
+    <script src="assets/src/defilant.js"></script>
+    <script src="assets/src/tri.js"></script>
 </body>
+
 </html>
