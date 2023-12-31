@@ -26,12 +26,14 @@
 
     .tech .txt {
         position: static;
+        display: inline-block;
         left: 0;
         margin: 0;
         width: 100vw;
-        background-color: rgba(255, 255, 255, 0);
         padding: 0;
-        padding-bottom: 0;
+        padding-bottom: 30px;
+        background-color: #b5b9bd;
+
     }
 
     .tech {
@@ -61,6 +63,7 @@
 
     .tech .btn {
         padding: 20px 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -92,3 +95,4 @@
         margin-right: 25%;
     }
 }
+

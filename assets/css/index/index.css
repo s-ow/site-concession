@@ -239,7 +239,7 @@ ul.modeles li:hover img {
 .tech .txt {
     position: absolute;
     left: 10%;
-    margin-top: 10%;
+    margin: 10% 0;
     width: 40vw;
     background-color: #f6fdffa2;
     padding: 2%;
