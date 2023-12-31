@@ -64,6 +64,8 @@
     }
 }
 
+
+
 @media screen and (max-width: 900px) {
     nav ul {
         display: none;
@@ -77,13 +79,17 @@
     nav {
         justify-content: center;
     }
+
+
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
     .colonne1 {
         margin-left: 25%;
     }
+
     .colonne2 {
         margin-right: 25%;
     }
 }
+

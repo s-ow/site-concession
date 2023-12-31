@@ -1,0 +1,197 @@
+.img img {
+    height: 100%;
+}
+
+.content {
+    margin: 10% 10%;
+}
+
+.txt .bouton:hover {
+    cursor: pointer;
+    color: lightgrey;
+    border: 1px solid lightgrey;
+    transition: 0.5s;
+}
+
+@media (width <= 600px) {
+    .orangefuel {
+        margin-top: 130vw;
+        height: 50vw;
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .orangefuel .img {
+        height: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .txt .titre {
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+
+    .txt .paragraphe {
+        margin-top: 5%;
+        font-size: 1rem;
+    }
+
+    .txt .bouton {
+        margin-top: 5%;
+        font-size: 1rem;
+        padding: 5% 15%;
+        display: inline-block;
+        border: 1px black solid;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .orangefuel {
+        height: 50vw;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .orangefuel .txt {
+        height: 85%;
+        margin: 12% 0 12% 7%;
+        flex: 1;
+        text-align: left;
+    }
+
+    .orangefuel .img {
+        height: 85%;
+        margin: 12% 7% 12% 0;
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media (600px < width < 800px) {
+    .orangefuel .txt {
+        height: 85%;
+        margin: 12% 0 12% 7%;
+        flex: 1;
+        text-align: left;
+    }
+
+    .orangefuel .img {
+        height: 85%;
+        margin: 12% 7% 12% 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .txt .titre {
+        font-size: 4vw;
+        line-height: 5vw;
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+
+    .txt .paragraphe {
+        margin-top: 10%;
+        font-size: 1.5vw;
+    }
+
+    .txt .bouton {
+        margin-top: 10%;
+        font-size: 1.5vw;
+        padding: 5% 15%;
+        display: inline-block;
+        border: 1px black solid;
+        transition: 0.5s;
+    }
+}
+
+@media (width > 801px) {
+    .orangefuel .txt {
+        height: 76%;
+        margin: 12% 0 12% 12%;
+        flex: 1;
+        text-align: left;
+    }
+
+    .orangefuel .img {
+        height: 76%;
+        margin: 12% 12% 12% 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .txt .titre {
+        font-size: 4vw;
+        line-height: 5vw;
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+
+    .txt .paragraphe {
+        margin-top: 10%;
+        font-size: 1.5vw;
+    }
+
+    .txt .bouton {
+        margin-top: 10%;
+        font-size: 1.5vw;
+        padding: 5% 15%;
+        display: inline-block;
+        border: 1px black solid;
+        transition: 0.5s;
+    }
+}
+
+@media (600 <= width <= 900px) {
+    .txt .titre {
+        font-size: 4vw;
+        line-height: 5vw;
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+
+    .txt .paragraphe {
+        margin-top: 10%;
+        font-size: 1.5vw;
+    }
+
+    .txt .bouton {
+        margin-top: 10%;
+        font-size: 1.5vw;
+        padding: 5% 15%;
+        display: inline-block;
+        border: 1px black solid;
+        transition: 0.5s;
+    }
+}
+
+@media (width > 901px) {
+    .txt .titre {
+        font-size: 3vw;
+        line-height: 3.5vw;
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+
+    .txt .paragraphe {
+        margin-top: 10%;
+        font-size: 1vw;
+    }
+
+    .txt .bouton {
+        margin-top: 10%;
+        font-size: 1vw;
+        padding: 5% 15%;
+        display: inline-block;
+        border: 1px black solid;
+        transition: 0.5s;
+    }
+}
