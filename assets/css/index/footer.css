@@ -1,5 +1,4 @@
 footer {
-    bottom: 0;
     background-color: black;
     color: white;
     padding: 40px 70px;
@@ -62,4 +61,10 @@ footer {
 .linksfooot a:hover {
     color: lightgrey;
     transition: 0.5s;
+}
+
+@media (width <= 600px) {
+    footer {
+        margin-top: 20px;
+    }
 }

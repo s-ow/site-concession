@@ -15,7 +15,6 @@
 
 @media (width <= 600px) {
     .orangefuel {
-        height: 50vw;
         width: 100vw;
     }
 
@@ -50,7 +49,6 @@
 
 @media screen and (min-width: 601px) {
     .orangefuel {
-        height: 50vw;
         width: 100vw;
         display: flex;
         justify-content: space-between;
@@ -65,7 +63,7 @@
     }
 
     .orangefuel .img {
-        height: 85%;
+        height: 40vw;
         margin: 12% 7% 12% 0;
         flex: 1;
         text-align: center;
@@ -81,7 +79,7 @@
     }
 
     .orangefuel .img {
-        height: 85%;
+        height: 40vw;
         margin: 12% 7% 12% 0;
         flex: 1;
         text-align: center;
@@ -118,7 +116,7 @@
     }
 
     .orangefuel .img {
-        height: 76%;
+        height: 40vw;
         margin: 12% 12% 12% 0;
         flex: 1;
         text-align: center;
