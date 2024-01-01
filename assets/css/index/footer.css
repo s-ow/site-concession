@@ -1,0 +1,65 @@
+footer {
+    bottom: 0;
+    background-color: black;
+    color: white;
+    padding: 40px 70px;
+}
+
+.fstpart {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.342);
+}
+
+.social {
+    margin: 20px 20px 10px 0;
+    font-size: 40px;
+    text-align: right;
+}
+.social a {
+    color: white;
+    transition: 0.5s;
+}
+.social a:hover {
+    color: lightgrey;
+    transition: 0.5s;
+}
+
+.scdpart {
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.titrefoot {
+    font-size: 24px;
+}
+
+.linksfoot {
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.linksfoot a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.linksfoot a:hover {
+    color: lightgrey;
+    transition: 0.5s;
+}
+
+.linksfooot {
+    margin-top: 20px;
+}
+
+.linksfooot a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.linksfooot a:hover {
+    color: lightgrey;
+    transition: 0.5s;
+}
